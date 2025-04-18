@@ -3,6 +3,10 @@ resource "aws_instance" "dev" {
     instance_type = var.type
   
 }
+resource "aws_vpc" "name" {
+  cidr_block = "10.0.0.0/16"
+  
+}
 
 # resource "aws_s3_bucket" "dev" {
 #     bucket = var.bucket
